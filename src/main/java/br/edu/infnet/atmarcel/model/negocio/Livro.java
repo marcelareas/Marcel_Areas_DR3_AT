@@ -1,4 +1,4 @@
-package br.edu.infnet.atmarcel.negocio;
+package br.edu.infnet.atmarcel.model.negocio;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

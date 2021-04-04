@@ -9,11 +9,9 @@
     <title>App AT Cosmetics</title>
 </head>
 <body>
-<div class="jumbotron text-center">
-    <h1>Livros</h1>
-</div>
+
 <div class="container">
-    <h2>Inclusão de Livros</h2>
+    <h2>Cadastro de Livros</h2>
     <form action="/livro/incluir" method="post">
         <div class="form-group">
             <label>Cliente:</label>
@@ -25,15 +23,15 @@
         </div>
 
         <div class="form-group">
-            <label>Nome:</label> <input type="text" class="form-control" name="nome">
+            <label>Título:</label> <input type="text" class="form-control" name="titulo">
         </div>
 
         <div class="form-group">
-            <label>Descrição:</label> <input type="text" class="form-control" name="descricao">
+            <label>Ano:</label> <input type="number" class="form-control" name="ano">
         </div>
 
         <div class="form-group">
-            <label>Preço:</label> <input type="number" class="form-control" step="0.01" name="preco">
+            <label>Autor:</label> <input type="text" class="form-control" name="autor">
         </div>
 
         <button type="submit" class="btn btn-block">Incluir</button>
@@ -56,10 +54,10 @@
             <tbody>
             <c:forEach var="l" items="${lista}">
                 <tr>
-                    <td>${l.nome}</td>
-                    <td>${l.descricao}</td>
+                    <td>${l.titulo}</td>
+                    <td>${l.ano}</td>
+                    <td>R$ ${l.autor}</td>
                     <td>${l.cliente.nome}</td>
-                    <td>R$ ${l.preco}</td>
                     <td><a href="/livro/${p.id}/excluir">Excluir</a></td>
                 </tr>
             </c:forEach>

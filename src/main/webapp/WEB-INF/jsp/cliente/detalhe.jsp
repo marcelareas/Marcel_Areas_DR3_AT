@@ -9,9 +9,7 @@
     <title>App AT</title>
 </head>
 <body>
-<div class="jumbotron text-center">
-    <h1>Clientes</h1>
-</div>
+
 <div class="container">
     <h2>Cadastro de Clientes</h2>
     <form action="/cliente/incluir" method="post">
