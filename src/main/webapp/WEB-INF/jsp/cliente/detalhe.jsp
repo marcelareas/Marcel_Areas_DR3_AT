@@ -51,7 +51,7 @@
         </table>
     </c:if>
     <c:if test="${not empty erro}">
-        <div class="alert alert-danger">
+        <div class="alert alert-dark">
             <strong>Erro!</strong> ${erro}
         </div>
     </c:if>
