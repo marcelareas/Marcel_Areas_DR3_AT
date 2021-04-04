@@ -56,4 +56,12 @@ public class Cliente {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
 }

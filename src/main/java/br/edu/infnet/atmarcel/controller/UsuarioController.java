@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 @Controller
+@SessionAttributes("user")
 public class UsuarioController {
 
     @Autowired
@@ -23,9 +25,8 @@ public class UsuarioController {
         Usuario usuario = usuarioService.autenticacao(email, senha);
 
         if (usuario != null) {
-
             model.addAttribute("user", usuario);
-            return "redirect:/home";
+            return "/index";
         }
 
         model.addAttribute("erro", "Verifique se o e-mail e a senha estão corretos e tente novamente.");

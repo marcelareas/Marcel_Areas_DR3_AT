@@ -27,7 +27,7 @@ public class LivroService {
         return (List<Livro>)livroRepository.findAll();
     }
 
-//    public List<Livro> obterLista(Usuario usuario) {
-//        return (List<Livro>)livroRepository.obterLista(usuario.getId(), Sort.by(Sort.Direction.ASC, "nome"));
-//    }
+    public List<Livro> obterLista(Usuario usuario) {
+        return livroRepository.obterLista(usuario.getId());
+    }
 }
