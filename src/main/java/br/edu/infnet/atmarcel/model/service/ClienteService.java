@@ -26,4 +26,8 @@ public class ClienteService {
     public List<Cliente> obterLista() {
         return (List<Cliente>)clienteRepository.findAll();
     }
+
+    public List<Cliente> obterLista(Usuario usuario) {
+        return (List<Cliente>)clienteRepository.obterLista(usuario.getId(), Sort.by(Sort.Direction.ASC, "nome"));
+    }
 }
