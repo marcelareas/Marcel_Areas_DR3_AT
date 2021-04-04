@@ -9,7 +9,7 @@
     <title>App AT</title>
 </head>
 <body>
-<div class="container">
+<div class="container" style="padding-top: 60px; width: 50% !important;">
     <form action="/usuario/login" method="post">
         <div class="form-group">
             <label>E-mail</label> <input type="email" class="form-control" placeholder="E-mail" name="email">

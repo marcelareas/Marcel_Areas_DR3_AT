@@ -26,6 +26,16 @@
             <p><a href="/livro">Livro</a></p>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div>
+            <form action="/" method="get">
+                <button type="submit" class="btn btn-block">Login</button>
+            </form>
+        </div>
+    </div>
 </div>
 </body>
 </html>
