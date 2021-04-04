@@ -41,7 +41,7 @@ public class ClienteController {
             clienteService.excluir(id);
         } catch (Exception e) {
 
-            model.addAttribute("erro", "Não é possível excluir um cliente que possui pedidos.");
+            model.addAttribute("erro", "Não é possível excluir um cliente que possui livros.");
 
             return showCliente(model, usuario);
         }
