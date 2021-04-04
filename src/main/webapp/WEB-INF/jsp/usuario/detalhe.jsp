@@ -11,7 +11,7 @@
 <body>
 
 <div class="container">
-    <h2>Usu·rios</h2>
+    <h2>Usu√°rios</h2>
     <form action="/usuario/incluir" method="post">
         <div class="form-group">
             <label>Nome:</label> <input type="text" class="form-control" placeholder="Insira o seu nome" name="nome">
@@ -39,7 +39,7 @@
     <br>
 </div>
 <div class="container">
-    <h2>Listagem de Usu·rios</h2>
+    <h2>Listagem de Usu√°rios</h2>
     <c:if test="${not empty lista}">
         <table class="table table-striped">
             <thead>
@@ -63,13 +63,13 @@
         </table>
     </c:if>
     <c:if test="${not empty erro}">
-        <div class="alert alert-danger">
+        <div class="alert alert-dark">
             <strong>Erro!</strong> ${erro}
         </div>
     </c:if>
     <c:if test="${empty lista}">
         <br>
-        <p>Nenhum usu·rio cadastrado.</p>
+        <p>Nenhum usu√°rio cadastrado.</p>
         <br>
     </c:if>
 </div>
