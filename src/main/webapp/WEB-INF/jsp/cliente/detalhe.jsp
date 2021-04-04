@@ -17,7 +17,7 @@
             <label>Nome:</label> <input type="text" class="form-control" name="nome">
         </div>
         <div class="form-group">
-            <label>CPF:</label> <input type="text" class="form-control" name="endereco">
+            <label>CPF:</label> <input type="text" class="form-control" name="cpf">
         </div>
         <div class="form-group">
             <label>E-mail:</label> <input type="email" class="form-control" name="email">
