@@ -56,9 +56,9 @@
                 <tr>
                     <td>${l.titulo}</td>
                     <td>${l.ano}</td>
-                    <td>R$ ${l.autor}</td>
+                    <td>${l.autor}</td>
                     <td>${l.cliente.nome}</td>
-                    <td><a href="/livro/${p.id}/excluir">Excluir</a></td>
+                    <td><a href="/livro/${l.id}/excluir">Excluir</a></td>
                 </tr>
             </c:forEach>
             </tbody>
