@@ -11,5 +11,5 @@ import java.util.List;
 @Repository
 public interface ILivroRepository extends CrudRepository<Livro, Integer> {
     @Query("from Livro p where p.usuario.id=:id")
-    List<Livro> obterLista(Integer id);
+    List<Livro> obterLista(Integer id, Sort by);
 }

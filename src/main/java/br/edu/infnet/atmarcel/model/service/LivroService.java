@@ -28,6 +28,6 @@ public class LivroService {
     }
 
     public List<Livro> obterLista(Usuario usuario) {
-        return livroRepository.obterLista(usuario.getId());
+        return livroRepository.obterLista(usuario.getId(), Sort.by(Sort.Direction.ASC, "titulo"));
     }
 }
