@@ -19,7 +19,7 @@
             <label>Senha</label> <input type="password" class="form-control" placeholder="Senha" name="senha">
         </div>
         <c:if test="${not empty erro}">
-            <div class="alert alert-danger">
+            <div class="alert alert-dark">
                 <strong>Login Incorreto</strong> ${erro}
             </div>
         </c:if>
